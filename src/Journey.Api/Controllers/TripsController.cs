@@ -10,7 +10,7 @@ public class TripsController : ControllerBase
     [HttpPost]
     public IActionResult Register([FromBody] RequestRegisterTripJson request)
     {
-        // return code
+        // return code!
         return Created();
     }
 }
