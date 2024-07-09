@@ -1,0 +1,11 @@
+/home/erick/Desktop/Journey/src/Journey.Communication/bin/Debug/net8.0/Journey.Communication.deps.json
+/home/erick/Desktop/Journey/src/Journey.Communication/bin/Debug/net8.0/Journey.Communication.dll
+/home/erick/Desktop/Journey/src/Journey.Communication/bin/Debug/net8.0/Journey.Communication.pdb
+/home/erick/Desktop/Journey/src/Journey.Communication/obj/Debug/net8.0/Journey.Communication.GeneratedMSBuildEditorConfig.editorconfig
+/home/erick/Desktop/Journey/src/Journey.Communication/obj/Debug/net8.0/Journey.Communication.AssemblyInfoInputs.cache
+/home/erick/Desktop/Journey/src/Journey.Communication/obj/Debug/net8.0/Journey.Communication.AssemblyInfo.cs
+/home/erick/Desktop/Journey/src/Journey.Communication/obj/Debug/net8.0/Journey.Communication.csproj.CoreCompileInputs.cache
+/home/erick/Desktop/Journey/src/Journey.Communication/obj/Debug/net8.0/Journey.Communication.dll
+/home/erick/Desktop/Journey/src/Journey.Communication/obj/Debug/net8.0/refint/Journey.Communication.dll
+/home/erick/Desktop/Journey/src/Journey.Communication/obj/Debug/net8.0/Journey.Communication.pdb
+/home/erick/Desktop/Journey/src/Journey.Communication/obj/Debug/net8.0/ref/Journey.Communication.dll

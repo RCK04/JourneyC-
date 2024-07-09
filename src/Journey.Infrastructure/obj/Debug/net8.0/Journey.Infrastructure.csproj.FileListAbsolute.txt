@@ -1,0 +1,11 @@
+/home/erick/Desktop/Journey/src/Journey.Infrastructure/bin/Debug/net8.0/Journey.Infrastructure.deps.json
+/home/erick/Desktop/Journey/src/Journey.Infrastructure/bin/Debug/net8.0/Journey.Infrastructure.dll
+/home/erick/Desktop/Journey/src/Journey.Infrastructure/bin/Debug/net8.0/Journey.Infrastructure.pdb
+/home/erick/Desktop/Journey/src/Journey.Infrastructure/obj/Debug/net8.0/Journey.Infrastructure.GeneratedMSBuildEditorConfig.editorconfig
+/home/erick/Desktop/Journey/src/Journey.Infrastructure/obj/Debug/net8.0/Journey.Infrastructure.AssemblyInfoInputs.cache
+/home/erick/Desktop/Journey/src/Journey.Infrastructure/obj/Debug/net8.0/Journey.Infrastructure.AssemblyInfo.cs
+/home/erick/Desktop/Journey/src/Journey.Infrastructure/obj/Debug/net8.0/Journey.Infrastructure.csproj.CoreCompileInputs.cache
+/home/erick/Desktop/Journey/src/Journey.Infrastructure/obj/Debug/net8.0/Journey.Infrastructure.dll
+/home/erick/Desktop/Journey/src/Journey.Infrastructure/obj/Debug/net8.0/refint/Journey.Infrastructure.dll
+/home/erick/Desktop/Journey/src/Journey.Infrastructure/obj/Debug/net8.0/Journey.Infrastructure.pdb
+/home/erick/Desktop/Journey/src/Journey.Infrastructure/obj/Debug/net8.0/ref/Journey.Infrastructure.dll
