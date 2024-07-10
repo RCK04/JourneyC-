@@ -1,4 +1,8 @@
+using Journey.Application.UseCases.Trips.GetAll;
+using Journey.Application.UseCases.Trips.Register;
 using Journey.Communication.Requests;
+using Journey.Exception;
+using Journey.Exception.ExceptionsBase;
 using Microsoft.AspNetCore.Mvc;
 
 namespace Journey.Api.Controllers;
@@ -10,7 +14,28 @@ public class TripsController : ControllerBase
     [HttpPost]
     public IActionResult Register([FromBody] RequestRegisterTripJson request)
     {
-        // return code!
-        return Created();
+        try
+        {
+            var useCase = new RegisterTripUseCase();
+            var response = useCase.Execute(request);
+
+            return Created(string.Empty, response);
+        }
+        catch (JourneyException ex)
+        {
+            return BadRequest(ex.Message);
+        }
+        catch
+        {
+            return StatusCode(StatusCodes.Status500InternalServerError, ResourceErrorMessages.UnknownError);
+        }
+    }
+
+    [HttpGet]
+    public IActionResult GetAll()
+    {
+        var useCase = new GetAllTripsUseCase();
+        var result = useCase.Execute();
+        return Ok(result);
     }
 }

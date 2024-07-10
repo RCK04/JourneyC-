@@ -17,3 +17,4 @@
 /home/erick/Desktop/Journey/src/Journey.Application/obj/Debug/net8.0/refint/Journey.Application.dll
 /home/erick/Desktop/Journey/src/Journey.Application/obj/Debug/net8.0/Journey.Application.pdb
 /home/erick/Desktop/Journey/src/Journey.Application/obj/Debug/net8.0/ref/Journey.Application.dll
+/home/erick/Desktop/Journey/src/Journey.Application/obj/Debug/net8.0/Journey.Application.sourcelink.json
