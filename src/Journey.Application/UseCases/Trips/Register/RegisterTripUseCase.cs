@@ -1,4 +1,3 @@
-using System.Runtime.InteropServices.JavaScript;
 using Journey.Communication.Requests;
 using Journey.Communication.Responses;
 using Journey.Exception;
@@ -13,14 +12,14 @@ public class RegisterTripUseCase
     public ResponseShortTripJson Execute(RequestRegisterTripJson request)
     {
         Validate(request);
-        
+
         var dbContext = new JourneyDbContext();
 
         var entity = new Trip
         {
             Name = request.Name,
             StartDate = request.StartDate,
-            EndDate = request.EndDate,
+            EndDate = request.EndDate
         };
         
         dbContext.Trips.Add(entity);
@@ -28,30 +27,23 @@ public class RegisterTripUseCase
 
         return new ResponseShortTripJson
         {
-            EndDate = entity.EndDate,
-            StartDate = entity.StartDate,
+            Id = entity.Id,
             Name = entity.Name,
-            Id = entity.Id
+            StartDate = entity.StartDate,
+            EndDate = entity.EndDate,
         };
     }
 
     private void Validate(RequestRegisterTripJson request)
     {
-        if (string.IsNullOrWhiteSpace(request.Name))
-        {
-            throw new JourneyException(ResourceErrorMessages.NameEmpty);
-        }
-
-        if (request.StartDate.Date < DateTime.UtcNow.Date)
-        {
-            throw new JourneyException(ResourceErrorMessages.StartDateMustBeLater);
-        }
+        var validator = new RegisterTripValidator();
+        var result = validator.Validate(request);
         
-        if (request.EndDate.Date < request.StartDate.Date)
+        if (result.IsValid == false)
         {
-            throw new JourneyException(ResourceErrorMessages.EndDateMustBeEqualOrLater);
+            var errorMessages = result.Errors.Select(error => error.ErrorMessage).ToList();
+            
+            throw new ErrorOnValidationException(errorMessages);
         }
-        
-        
     }
 }

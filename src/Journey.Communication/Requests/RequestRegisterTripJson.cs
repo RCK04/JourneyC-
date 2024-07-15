@@ -1,5 +1,4 @@
 ﻿namespace Journey.Communication.Requests;
-
 public class RequestRegisterTripJson
 {
     public string Name { get; set; } = string.Empty;
